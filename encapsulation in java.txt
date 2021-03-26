@@ -1,0 +1,35 @@
+ 
+class Test
+{
+private int regno;
+private String name;
+private int mark;
+
+void setregno(int regno)
+{
+    this.regno=regno;
+}
+void setname(String name)
+{
+    this.name=name;    
+}
+void setmark(int mark)
+{
+    this.mark=mark;
+}
+    
+void getvalue()
+{
+System.out.println("\n"+name +"\n"+ mark +"\n"+ regno);
+}}
+public class Main
+{
+	public static void main(String[] args) {
+	    Test a1 =new Test();
+	    a1.setname("Prasanth G");
+	    a1.setregno(111);
+	    a1.setmark(30);
+	    a1.getvalue();
+		
+	}
+}
