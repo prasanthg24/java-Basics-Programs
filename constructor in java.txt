@@ -1,0 +1,36 @@
+ class Sample
+{   int id,salary;  
+    String name;
+    Sample()
+    {
+        System.out.println("Im default constructor");
+    }
+    void setid(int id)
+    {
+       this.id=id;
+    }
+    void setname(String n)
+    {
+        name=n;
+    }
+    void setsalary(int n)
+    {
+        salary=n;
+    }
+    
+    void getvalue()
+    {
+        System.out.println("\nName= "+name+"\nId ="+id+"\nSalary = "+salary);
+    }
+    
+}
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Sample s1 =new Sample();
+        s1.setid(101);
+        s1.setname("Prasanth Software Engineer");
+        s1.setsalary(50000);
+        s1.getvalue();
+    }
+}
